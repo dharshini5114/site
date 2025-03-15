@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    background: url("bg1.gif") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Create a semi-transparent overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.274); /* Adjust transparency */
+    z-index: -1;
+}
+
+/* Centered content styling */
+center {
+    background: rgba(255, 255, 255, 0.356);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styles */
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Form styling */
+form {
+   
+    text-align: center;
+    width: 20%;
+    margin: auto;
+}
+
+input, select {
+    padding: 10px;
+    margin: 5px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background: #218838;
+}
+
+/* Navigation links */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
